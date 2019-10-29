@@ -1,0 +1,18 @@
+section.articles#articles
+	.flex.flex--center
+
+		.col-50
+			.article-wrap
+				{% for post in site.posts limit: 12 %}
+				a(href="{{post.url}}" style="background-image: url(assets/images/posts/thumbnails/{{post.thumbnail}}").article-thumb
+					.article-meta
+						.name {{post.title}} 
+						.date {{post.date | date: "%a, %b %d, %Y"}}
+				{% endfor %}
+				
+
+		.col-50.flex.flex--center.order-first
+			.col-1
+				desc-wrap
+					p.home-lead I occasionally write articles on stuff I am thinking about
+					a(href="/articles").home-cta See All Articles

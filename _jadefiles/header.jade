@@ -1,0 +1,27 @@
+mixin nav-content()
+	ul
+		li: a(href="#about-me") About
+		li: a(href="#projects") Projects
+		li: a(href="#articles") Articles
+		li: a(href="#videos") Videos
+		li: a(href="#music") Music
+		li: a(href="#contact") Contact
+
+.mobile-nav
+	+nav-content()
+
+
+
+header
+	.header-position
+		h1.logo Mark Mushiva
+
+		nav.site-nav
+			+nav-content()
+			
+
+		a(href="mailto:mmushiva@gmail.com").email-link +email me
+
+		.mobile-nav-toggle: span
+
+
