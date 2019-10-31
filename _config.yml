@@ -1,5 +1,5 @@
 name: Mark Mushiva
 markdown: redcarpet
-baseurl: "markmushiva.com"
+baseurl: 
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 
