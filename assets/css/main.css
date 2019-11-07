@@ -868,7 +868,7 @@ section.about {
     font-family: Fira Sans;
     font-weight: 100;
     text-decoration: underline;
-    display: none; }
+    display: flex; }
   section.about h2 {
     color: #ffffff;
     font-size: 60px;
@@ -884,7 +884,14 @@ section.about {
   section.about h2, section.about .home-lead {
     margin-left: auto;
     margin-right: auto;
-    max-width: 300px; } }
+    max-width: 300px; } 
+
+    section.about .cv 
+    {
+    margin-left: 205px;  
+    }
+
+  }
 
 section.youtube {
   background-image: url(/assets/images/vine-bg.jpg);
@@ -916,6 +923,7 @@ section.youtube {
         display: none; } }
   section.youtube .col-1 {
     position: relative;
+    color: #D3D3D3;
     height: 300px;
     display: -webkit-box;
     display: -ms-flexbox;
