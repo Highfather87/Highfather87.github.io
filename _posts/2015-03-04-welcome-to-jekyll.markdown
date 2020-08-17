@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "War Hammer"
+title:  "Time Hunter"
 thumbnail: post-1.png
 ---
 
