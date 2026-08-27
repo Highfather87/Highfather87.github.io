@@ -1,1 +1,45 @@
-<section id="articles" class="articles"><div class="flex flex--center"><div class="col-50"><div class="article-wrap">{% for post in site.posts limit: 12 %}<a href="{{post.url}}" style="background-image: url(assets/images/posts/thumbnails/{{post.thumbnail}}" class="article-thumb"><div class="article-meta"><div class="name">{{post.title}} </div><div class="date">{{post.date | date: "%a, %b %d, %Y"}}</div></div></a>{% endfor %}</div></div><div class="col-50 flex flex--center order-first"><div class="col-1"><desc-wrap><p class="home-lead">I occasionally write articles on stuff I am thinking about</p><a href="/articles" class="home-cta">See All Articles</a></desc-wrap></div></div></div></section>
+<section id="articles" class="articles">
+  <div class="flex flex--center">
+
+    <div class="col-50">
+      <div class="article-wrap">
+
+        {% for post in site.posts limit: 12 %}
+
+          {% if post.thumbnail %}
+            {% assign thumb = "/assets/images/posts/thumbnails/" | append: post.thumbnail %}
+          {% else %}
+            {% assign thumb = post.cover %}
+          {% endif %}
+
+          <a
+            href="{{ post.url }}"
+            class="article-thumb"
+            style="background-image: url('{{ thumb }}');"
+          >
+            <div class="article-meta">
+              <div class="name">{{ post.title }}</div>
+              <div class="date">
+                {{ post.date | date: "%a, %b %d, %Y" }}
+              </div>
+            </div>
+          </a>
+
+        {% endfor %}
+
+      </div>
+    </div>
+
+    <div class="col-50 flex flex--center order-first">
+      <div class="col-1">
+        <div class="desc-wrap">
+          <p class="home-lead">
+            I occasionally write articles on stuff I am thinking about
+          </p>
+          <a href="/articles" class="home-cta">See All Articles</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

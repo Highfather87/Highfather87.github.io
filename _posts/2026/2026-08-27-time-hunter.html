@@ -10,6 +10,93 @@ body-name: tools-article
 //draft: true
 ---
 
+
+<style>
+  /* Time Hunter — clean, readable article layout */
+  article {
+    width: min(100% - 40px, 980px);
+    margin: 0 auto;
+    padding: 56px 0 80px;
+    box-sizing: border-box;
+  }
+
+  article h2 {
+    margin: 0 0 28px;
+    font-size: clamp(2.4rem, 6vw, 4.5rem);
+    line-height: .95;
+    letter-spacing: -0.04em;
+  }
+
+  article > div:first-of-type {
+    width: 100% !important;
+    margin: 0 0 36px !important;
+  }
+
+  article > div:first-of-type img {
+    display: block;
+    width: 100% !important;
+    height: auto !important;
+    max-height: 70vh;
+    object-fit: cover !important;
+  }
+
+  article > p,
+  article > section,
+  article > h3 {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  article > p[style*="italic"] {
+    margin-top: 0;
+    margin-bottom: 28px;
+    opacity: .65;
+    font-size: .9rem;
+  }
+
+  article section {
+    font-size: 1.08rem;
+    line-height: 1.75;
+  }
+
+  article section.intro {
+    margin-bottom: 44px;
+    font-size: clamp(1.2rem, 2.2vw, 1.5rem);
+    line-height: 1.55;
+  }
+
+  article section p {
+    margin: 0 0 1.5em;
+  }
+
+  article h3 {
+    margin-top: 64px;
+    margin-bottom: 20px;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+  }
+
+  article .comments-wrap {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (max-width: 640px) {
+    article {
+      width: min(100% - 32px, 980px);
+      padding-top: 32px;
+    }
+
+    article h2 { margin-bottom: 22px; }
+    article > div:first-of-type { margin-bottom: 28px !important; }
+    article section { font-size: 1rem; line-height: 1.7; }
+    article h3 { margin-top: 48px; }
+  }
+</style>
+
 <article>
 
 <h2>Time Hunter</h2>
@@ -24,7 +111,7 @@ body-name: tools-article
 
 <section>
 
-<p><br>Verité footage grounds the film in my daily life — long commutes on Berlin's cold streets, open-mic performances in cramped clubs, and phone calls home to reassure my mother as she faces housing insecurity. These real-world stakes underscore the film's nonfiction spine: a migrant balancing survival and assimilation in Europe while sustaining family back home. Interwoven are memories of Namibia — its warmth, music, and communal life — contrasted with the isolation of Berlin.</p>
+<p>Verité footage grounds the film in my daily life — long commutes on Berlin's cold streets, open-mic performances in cramped clubs, and phone calls home to reassure my mother as she faces housing insecurity. These real-world stakes underscore the film's nonfiction spine: a migrant balancing survival and assimilation in Europe while sustaining family back home. Interwoven are memories of Namibia — its warmth, music, and communal life — contrasted with the isolation of Berlin.</p>
 
 <p>By day, I work as a creative technologist, researcher, and musician. By night, I channel my philosophies around technology and revolution into lyrical performance, where my alter ego — the Time Hunter — emerges as a speculative agent on a quest to decolonize technology used to maintain imperial control of time and space.</p>
 
