@@ -1047,7 +1047,7 @@ section.articles {
 section.soundcloud {
   background-image: url(/assets/images/akai_berlinbg2.jpg);
   background-size: cover;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   color: black; }
   section.soundcloud .soundcloud-content {
     display: -webkit-box;
